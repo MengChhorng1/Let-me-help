@@ -1,0 +1,82 @@
+@import url("IV_body_style.css");
+
+.left-div > .left-t-div {
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  align-items: center;
+}
+
+.left-t-div h1 {
+  color: var(--main-color);
+}
+
+.left-div > .left-m-div {
+  display: flex;
+  align-content: start;
+  height: 55%;
+}
+
+.left-m-div > .left-m-L-div {
+  display: flex;
+  width: 40%;
+}
+.left-m-div > .left-m-R-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 60%;
+}
+
+.left-m-R-div > .left-m-R-div-1-s {
+  display: flex;
+  justify-content: start;
+  background-color: var(--main-color);
+  border-radius: 20px 0 0 20px;
+}
+
+.left-m-R-div-1-s p {
+  font-size: 20px;
+  margin-right: 20px;
+  color: var(--secondary-color);
+}
+
+.left-m-R-div-1-s img {
+  width: 30px;
+  height: 30px;
+  margin-top: 23px;
+  margin-right: 5px;
+  margin-left: 11px;
+}
+
+.left-m-R-div > .left-m-R-div-1 {
+  display: flex;
+  justify-content: start;
+}
+
+.left-m-R-div-1 p {
+  font-size: 20px;
+  margin-right: 20px;
+  color: var(--main-color);
+}
+
+.left-m-R-div-1 img {
+  width: 30px;
+  height: 30px;
+  margin-top: 23px;
+  margin-right: 5px;
+  margin-left: 11px;
+}
+
+.left-div > .left-b-div {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-b-div img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Sign Up
+    </title>
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/singin.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="form">
+            <img class="img-logo-signIn" src="./image/photo_2025-05-13_15-33-54.jpg" alt="logo">
+            <div class="logo-form-signIn">
+                <p>Create Account</p>
+                <div class="name label-login">
+                    <label for="username">Username</label>
+                    <input name="username" id="username" type="text" placeholder="Username or Phone Number">
+                </div>
+                <div style="display: flex;justify-content:space-between">
+                    <div class="gender name label-login">
+                        <label>Gender</label>
+                        <div>
+                            <input name="gender" id="male" type="radio">
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input name="gender" id="female" type="radio">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="name label-login">
+                        <label for="birth">Birth</label>
+                        <input name="birth" id="birth" type="date">
+                    </div>
+                </div>
+                <div class="name label-login">
+                    <label for=" nationality">Choose your Nationality:</label>
+                    <input list="national" id="nationality" name="nationality" placeholder="Choose your nationality" />
+
+                    <datalist id="national">
+                        <option value="Khmer">
+                        <option value="English">
+                        <option value="American">
+                        <option value="Thia">
+                    </datalist>
+                </div>
+                <div class="name label-login">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="text" placeholder="example@gmail.com">
+                </div>
+                <div class="pass  label-login">
+                    <label for="password">Password</label>
+                    <input name="password" id="password" type="password" placeholder="Password">
+                </div>
+                <div class="pass  label-login">
+                    <label for="password-conform">Conform Password</label>
+                    <input name="password-conform" id="password-conform" type="password" placeholder="Conform Password">
+                </div>
+                <div class="pass  label-login">
+                    <label for="location">Location</label>
+                    <input name="location" id="location" type="text" placeholder="" readonly>
+
+                </div>
+                <div class="btn">
+                    <div class="button">
+                        <button type="button" onclick="getLocation()">Use My Current Location</button>
+                        <button type="button" onclick="window.location.href='./Homepage/Home_page.html'">Sign
+                            Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+
+            function successCallback(position) {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+                fetch(
+                    `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`
+                )
+                    .then((response) => response.json())
+                    .then((data) => {
+                        const address = data.address;
+                        const displayLocation = `${address.city || address.town || address.village || ""
+                            }, ${address.country}`;
+                        document.getElementById("location").value = displayLocation;
+                        document.getElementById("location").value = displayLocation;
+                    })
+                    .catch(() => {
+                        document.getElementById("location").value = lat + ", " + lon;
+                    });
+            }
+
+            function errorCallback(error) {
+                alert("Unable to retrieve your location. Error: " + error.message);
+            }
+        }
+        function navigate() {
+            window.location.href = "";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@import url("IV_body_style.css");
+
+.left-top-div h3 {
+  font-size: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  line-height: 1;
+  justify-self: center;
+  cursor: pointer;
+}
+
+.body-h {
+  color: black;
+}
+
+.body-h:hover {
+  color: aquamarine;
+}
+
+.left-top-div p {
+  margin-left: 10px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+  line-height: 1;
+  font-size: 17px;
+}
+
+.left-bottom-div {
+}

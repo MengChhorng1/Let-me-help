@@ -1,0 +1,20 @@
+@import url("I_main_style.css");
+.body-div > .top-div {
+  display: flex;
+  flex-direction: column;
+  /* position: fixed;
+  width: 98.85%; */
+  width: auto;
+  height: 400px;
+  margin-bottom: 2px;
+  background-color: rgb(243, 243, 243);
+}
+
+.body-div > .bottom-div {
+  /* margin-top: 400px; */
+  width: auto;
+  display: block;
+  height: 61.3%;
+  margin-right: 13px;
+  margin-left: 13px;
+}

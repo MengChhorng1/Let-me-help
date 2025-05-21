@@ -1,0 +1,61 @@
+@import url("I_main_style.css");
+
+.left-part-div > .left-top-div {
+  display: block;
+  background-color: bisque;
+  height: 193px;
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+  width: auto;
+  z-index: 1;
+}
+.left-part-div > .left-bottom-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  width: auto;
+  height: 72.9%; /*modify to auto*/
+}
+
+.right-part-div > .top-div {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid;
+  height: 450px;
+}
+
+.right-part-div > .bottom-div {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 14px;
+  margin-top: 5px;
+  padding: 10px;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .right-part-div > .bottom-div {
+    grid-template-columns: repeat(5, auto);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .right-part-div > .bottom-div {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .right-part-div > .bottom-div {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .right-part-div > .bottom-div {
+    grid-template-columns: repeat(2, auto);
+  }
+}

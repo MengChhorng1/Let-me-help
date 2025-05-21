@@ -1,0 +1,52 @@
+@import url("IV_body_style.css");
+
+.bottom-div > .bottom-div-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  border: 1px solid;
+  border-radius: 15px;
+  height: 137.5px;
+  width: 150px;
+  resize: auto;
+}
+
+.bottom-div-1 > .bottom-div-1-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+  /* border-bottom: 1px solid; */
+}
+
+.bottom-div-1-1 > .bottom-div-1-1-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  border-bottom: 1px solid;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.bottom-div-1-1-1:hover {
+  background-color: aquamarine;
+}
+
+.bottom-div-1-1-1 img {
+  /* background-size: auto; */
+  /* background-repeat: no-repeat; */
+  background-position: top left;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-div-1 > .bottom-div-1-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35%;
+}

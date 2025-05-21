@@ -1,0 +1,210 @@
+@import url("IV_body_style.css");
+.top-div > .top-div-1 {
+  display: flex;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 8px;
+  justify-content: space-between;
+  height: 35px;
+}
+
+.top-div-1 > .top-div-1-1 {
+  height: 60%;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1px;
+}
+
+.top-div-1-1 p {
+  font-size: 18px;
+}
+
+.top-div-1 > .top-div-1-2 {
+  height: 50%;
+  width: 90px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.top-div-1-2 > .top-div-1-2-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-div-1-2-1 > .top-div-button {
+  border: none;
+}
+
+.top-div-button:hover {
+  background-color: aquamarine;
+}
+
+.top-div-button img {
+  /* object-fit: cover; */
+  width: 80%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: top left; /* or center, right etc. */
+  background-size: auto; /* Keeps original size */
+  cursor: pointer;
+}
+
+.top-div > .top-div-2 {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 80px;
+  padding: 13px;
+  gap: 30px;
+  justify-items: center;
+  align-content: center;
+}
+
+.top-div-2 > .top-div-2-1 {
+  display: block;
+  border-radius: 10px;
+  height: 90px;
+  width: 100px;
+  background-color: rgba(3, 71, 134, 0.836);
+}
+
+.top-div-2-1 > .top-div-2-1-1 {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid;
+  justify-content: center;
+  background-color: bisque;
+  border-radius: 10px;
+  width: 100%;
+  height: 70%;
+}
+
+.top-div-2-1-1:hover {
+  background-color: aquamarine;
+}
+
+.top-div-2-1-1 img {
+  /* object-fit: cover; */
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top left; /* or center, right etc. */
+  background-size: auto; /* Keeps original size */
+}
+
+.top-div-2-1 > .top-div-2-1-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  object-fit: cover;
+}
+
+.top-div-2-1-2 p {
+  font-size: 11px;
+  color: white;
+}
+
+.top-div > .top-div-3 {
+  display: flex;
+  padding: 15px;
+  height: 220px;
+}
+
+.top-div-3 > .top-div-3-1 {
+  display: flow-root;
+  margin-right: 5px;
+  width: 30%;
+}
+
+.top-div-3-1 > .top-div-3-1-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 10px 0px 0px 0px;
+  margin-bottom: 2px;
+  height: 50%;
+  background-color: rgba(3, 71, 134, 0.836);
+}
+
+.top-div-3-1-1 > .top-div-3-1-1-1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  border-radius: 10px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.top-div-3-1-1-1 p {
+  align-self: center;
+  font-size: 30px;
+}
+
+.top-div-3-1-1-1 img {
+  align-self: center;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.top-div-3-1 > .top-div-3-1-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 0px 0px 0px 10px;
+  background-color: rgba(3, 71, 134, 0.836);
+  height: 47%;
+}
+
+.top-div-3-1-2 > .top-div-3-1-2-1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  border-radius: 0px 0px 0px 10px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.top-div-3-1-2-1 p {
+  align-self: center;
+  font-size: 30px;
+}
+.top-div-3-1-2-1 img {
+  align-self: center;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.top-div-3 > .top-div-3-2 {
+  display: flex;
+  background-color: bisque;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 0px 10px 10px 0px;
+  padding: 6px;
+  width: 70%;
+}
+
+.top-div-3-2 > .top-div-map {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 0px 11px 11px 0px;
+}

@@ -1,0 +1,13 @@
+@import url("IV_body_style.css");
+
+.right-div > .right-L-div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.right-div > .right-R-div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}

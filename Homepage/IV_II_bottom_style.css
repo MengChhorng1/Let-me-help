@@ -1,0 +1,323 @@
+@import url("IV_body_style.css");
+
+.bottom-div > .bottom-div-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  height: 25px;
+}
+
+.bottom-div-1 > .bottom-div-1-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: bisque;
+}
+
+.bottom-div-1 > .bottom-div-1-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bottom-p {
+  color: rgba(3, 71, 134, 0.836);
+}
+
+.bottom-p:hover {
+  color: aquamarine;
+}
+
+.bottom-div > .bottom-div-2 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  overflow-y: auto;
+  height: 500px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+  .bottom-div > .bottom-div-2 {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .bottom-div > .bottom-div-2 {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .bottom-div > .bottom-div-2 {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+.bottom-div-2 > .bottom-div-2-1 {
+  display: flex;
+  flex-direction: row;
+  height: 220px;
+  border: 1px solid;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.bottom-div-2-1 > .bottom-div-2-1-1 {
+  display: block;
+  width: 60%;
+  background-color: rgba(3, 71, 134, 0.836);
+  border-radius: 7px;
+}
+
+.bottom-div-2-1-1 > .bottom-div-2-1-1-1 {
+  height: 35%;
+  margin-top: 5px;
+  border-radius: 50%;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  border: none;
+  background-color: transparent;
+}
+
+.bottom-div-2-1-1-1:hover {
+  background-color: aquamarine;
+}
+
+.bottom-div-2-1-1-1 img {
+  height: 100%;
+  width: 100%;
+  background-color: #bbb;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.bottom-div-2-1-1 > .bottom-div-2-1-1-2 {
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+}
+
+.bottom-div-2-1-1-2 > .bottom-div-2-1-1-2-1 {
+  display: block;
+  height: 80px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+
+.bottom-div-2-1-1-2-1 p {
+  align-self: self-start;
+  width: 150px;
+  height: 13px;
+  font-size: 13px;
+  color: white;
+}
+
+.bottom-div-2-1-1-2 > .bottom-div-2-1-1-2-2 {
+  display: flex;
+  height: 30px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-div-2-1-1-2-2 > .bottom-div-2-1-1-2-2-1 {
+  width: 15px;
+}
+
+.bottom-div-2-1-1-2 > .bottom-div-2-1-1-2-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.bottom-div-2-1-1-2-3 > .bottom-button-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border-radius: 10px;
+  height: 20px;
+  width: 130px;
+  cursor: pointer;
+}
+
+.bottom-button-location p {
+  font-size: 16px;
+}
+
+.bottom-button-location:hover {
+  background-color: #bbb;
+}
+
+.bottom-div-2-1 > .bottom-div-2-1-2 {
+  display: block;
+  width: 40%;
+}
+
+.bottom-div-2-1-2 > .bottom-div-2-1-2-1 {
+  display: flex;
+  height: 13%;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  justify-content: end;
+  align-items: center;
+  justify-self: end;
+  object-fit: cover;
+}
+
+.bottom-div-2-1-2-1 > .bottom-favorite-div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bottom-favorite-div:hover {
+  background-color: aqua;
+}
+
+.bottom-favorite-div img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.bottom-div-2-1-2 > .bottom-div-2-1-2-2 {
+  display: flex;
+  flex-direction: column;
+  height: 87%;
+  row-gap: 5px;
+  padding: 5px;
+}
+
+/* .bottom-div-2-1-2-2 > .bottom-div-2-1-2-2-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.bottom-div-2-1-2-2 > .bottom-button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border-radius: 9px;
+  height: 25px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.bottom-button-div p {
+  font-size: 10px;
+}
+
+.bottom-button-div:hover {
+  background-color: aliceblue;
+}
+
+/* heart */
+/* Heart Animation Styles */
+.heart-container {
+  margin-top: 1px;
+  margin-left: auto;
+  margin-right: 5px;
+  --heart-color: rgba(3, 71, 134);
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transition: 0.3s;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container .svg-outline,
+.heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+.heart-container .svg-filled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate 0.5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked ~ .svg-container .svg-filled {
+  display: block;
+}
+
+.heart-container .checkbox:checked ~ .svg-container .svg-celebrate {
+  display: block;
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
+/* ---------------------------------------------------- */

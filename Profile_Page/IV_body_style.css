@@ -1,0 +1,15 @@
+@import url("I_main_style.css");
+
+.body-div > .left-div {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: var(--secondary-color);
+}
+
+.body-div > .right-div {
+  display: flex;
+  width: 80%;
+  background-color: var(--main-color);
+  /* background-color: rgb(185, 185, 185); */
+}

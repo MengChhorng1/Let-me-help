@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendor Detail</title>
+    <link rel="stylesheet" href="vendor-detail.css" />
+  </head>
+  <body>
+    <!-- Header goes here -->
+    <div class="header-div">
+      <div class="header-div-1">
+        <a href="../Homepage/Home_page.html"
+          ><h2 style="color: white">LET_ME_HELP</h2></a
+        >
+      </div>
+      <div class="header-div-2">
+        <div class="h-w-2">
+          <div class="header-div-2-1">
+            <a href="./Homepage/Home_page.html"><p class="header-p">Home</p></a>
+          </div>
+          <div class="header-div-2-1">
+            <p class="header-p">Contact</p>
+          </div>
+          <div class="header-div-2-1">
+            <p class="header-p">About</p>
+          </div>
+          <!-- <div class="header-div-2-1">
+            <p class="header-p">Sign up</p>
+          </div> -->
+        </div>
+      </div>
+      <div class="header-div-3">
+        <form action="/search" class="header-search">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Item services"
+            class="searching"
+          />
+          <button type="button">Search</button>
+        </form>
+      </div>
+      <div class="header-div-4">
+        <div class="h-w-4">
+          <div class="header-div-4-1">
+            <a href="./Profile_Page/Profile_Page.html"
+              ><p class="header-p">Profile</p></a
+            >
+          </div>
+          <div class="header-div-4-1">
+            <a href="fav-page.html"><p class="header-p">Favorite</p></a>
+          </div>
+          <div class="header-div-4-1">
+            <a href="booking-page.html"><p class="header-p">Booking</p></a>
+          </div>
+          <div class="header-div-4-1">
+            <p class="header-p">Language</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------ -->
+    <div class="body-div">
+      <div class="left-part-div">
+        <div class="left-top-div">
+          <h3 class="body-h">Current Place</h3>
+          <p>Country : Cambodia</p>
+          <p>Main Location : Phnom Penh City</p>
+          <p>District: Chroy Changvar</p>
+          <p>Neigborhood : Prek Leap</p>
+          <p>Village: Kean Klaeng</p>
+          <p>Address : 123G</p>
+          <p>Street : 6A</p>
+        </div>
+        <div class="left-bottom-div">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1140.2988606006338!2d104.9306254583117!3d11.589238600751012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1skm!2skh!4v1746794848136!5m2!1skm!2skh"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="right-part-div">
+        <div class="header-container">
+          <div class="profile">
+            <img src="Image/soeu.JPG" />
+          </div>
+          <div class="vendor-info">
+            <div class="sub-vendor-info">
+              <p><span>Name :</span> Vorn Soeu</p>
+              <p><span>Gender:</span> M</p>
+              <p><span>Phone Number:</span> 028 828282</p>
+            </div>
+          </div>
+          <div class="message">
+            <p>Message</p>
+          </div>
+        </div>
+        <div class="category">
+          <select name="item" id="item-select" onchange="navigateToPage()">
+            <option value="">— Select an item —</option>
+            <option value="vendor-detail.html">Air Conditioner</option>
+            <option value="fan-item.html">Fan</option>
+            <option value="fridge.html">Fridge</option>
+          </select>
+        </div>
+
+        <script>
+          function navigateToPage() {
+            const select = document.getElementById("item-select");
+            const selectedValue = select.value;
+            if (selectedValue) {
+              window.location.href = selectedValue;
+            }
+          }
+        </script>
+        <div class="container">
+          <!-- ------------------Main Item1----------------------- -->
+          <div class="main-item">
+            <div class="sub-item">
+              <div class="image-category">
+                <img src="Image/air conditioner/Mitsubishi.jpg" />
+              </div>
+              <div class="info-category">
+                <p>Item : Air Conditioner</p>
+                <p>Model : Mitsubishi</p>
+                <p>Booking Status: Open</p>
+              </div>
+              <div class="main-button">
+                <!-- Heart Animation -->
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+                <div class="booking-button">
+                  <p>Booking</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------Main Item2----------------------- -->
+          <div class="main-item">
+            <div class="sub-item">
+              <div class="image-category">
+                <img src="Image/air conditioner/air conditioner LG.jpg" />
+              </div>
+              <div class="info-category">
+                <p>Item : Air Conditioner</p>
+                <p>Model : LG</p>
+                <p>Booking Status: Open</p>
+              </div>
+              <div class="main-button">
+                <!-- Heart Animation -->
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+                <div class="booking-button">
+                  <p>Booking</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------Main Item3----------------------- -->
+          <div class="main-item">
+            <div class="sub-item">
+              <div class="image-category">
+                <img src="Image/air conditioner/air conditioner samsung.jpg" />
+              </div>
+              <div class="info-category">
+                <p>Item : Air Conditioner</p>
+                <p>Model : Samsung</p>
+                <p>Booking Status: Open</p>
+              </div>
+              <div class="main-button">
+                <!-- Heart Animation -->
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+                <div class="booking-button">
+                  <p>Booking</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------Main Item4----------------------- -->
+          <div class="main-item">
+            <div class="sub-item">
+              <div class="image-category">
+                <img src="Image/air conditioner/panasonic.jpg" />
+              </div>
+              <div class="info-category">
+                <p>Item : Air Conditioner</p>
+                <p>Model : panasonic</p>
+                <p>Booking Status: Open</p>
+              </div>
+              <div class="main-button">
+                <!-- Heart Animation -->
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+                <div class="booking-button">
+                  <p>Booking</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------Main Item5----------------------- -->
+          <div class="main-item">
+            <div class="sub-item">
+              <div class="image-category">
+                <img src="Image/air conditioner/general.jpg" />
+              </div>
+              <div class="info-category">
+                <p>Item : Air Conditioner</p>
+                <p>Model : General</p>
+                <p>Booking Status: Open</p>
+              </div>
+              <div class="main-button">
+                <!-- Heart Animation -->
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+                <div class="booking-button">
+                  <p>Booking</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------Main Item5----------------------- -->
+          <div class="main-item">
+            <div class="sub-item">
+              <div class="image-category">
+                <img
+                  style="background-color: white"
+                  src="Image/air conditioner/air conditioner comfee.png"
+                />
+              </div>
+              <div class="info-category">
+                <p>Item : Air Conditioner</p>
+                <p>Model : Comfee</p>
+                <p>Booking Status: Open</p>
+              </div>
+              <div class="main-button">
+                <!-- Heart Animation -->
+                <div class="heart-container" title="Like">
+                  <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+                  <div class="svg-container">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-outline"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="svg-filled"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="svg-celebrate"
+                      width="100"
+                      height="100"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="10,10 20,20"></polygon>
+                      <polygon points="10,50 20,50"></polygon>
+                      <polygon points="20,80 30,70"></polygon>
+                      <polygon points="90,10 80,20"></polygon>
+                      <polygon points="90,50 80,50"></polygon>
+                      <polygon points="80,80 70,70"></polygon>
+                    </svg>
+                  </div>
+                </div>
+                <div class="booking-button">
+                  <p>Booking</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer page -->
+    <div class="footer-div">
+      <div class="footer-div-1">
+        <h2>ITTecH Developer</h2>
+      </div>
+      <div class="footer-div-2">
+        <p style="text-align: center">
+          ITTecH is Team Developer who will help hardwork or talent peoples
+          <br />
+          whose deserve what they're trying to do,<br />
+          This is just a prototype but we will see it in the future. <br />
+          See yaa!
+        </p>
+      </div>
+      <div class="footer-div-3">
+        <div class="footer-div-3-1">
+          <img src="Image\facebook.png" alt="facebook" />
+        </div>
+        <div class="footer-div-3-1">
+          <img src="Image\twitter.png" alt="twitter" />
+        </div>
+        <div class="footer-div-3-1">
+          <img src="Image\social.png" alt="google" />
+        </div>
+        <div class="footer-div-3-1">
+          <img src="Image\youtube.png" alt="Youtube" />
+        </div>
+        <div class="footer-div-3-1">
+          <img src="Image\linkedin.png" alt="LinkedIn" />
+        </div>
+      </div>
+      <div class="footer-div-4">
+        <div class="footer-div-4-1">
+          <p>Copyright © From ITTecH Developer</p>
+        </div>
+        <div class="footer-div-4-2">
+          <div class="footer-div-4-2-1">
+            <p class="footer-p">Home</p>
+          </div>
+          <div class="footer-div-4-2-1">
+            <p class="footer-p">About</p>
+          </div>
+          <div class="footer-div-4-2-1">
+            <p class="footer-p">Contact</p>
+          </div>
+          <div class="footer-div-4-2-1">
+            <p class="footer-p">Sign up</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
